@@ -30,7 +30,7 @@ public class OrderControllerTest {
 
     @Before
     public void setUp(){
-        orderController = new OrderController();
+        orderController = new OrderController(null,null);
         TestUtils.injectObjects(orderController, "orderRepository", orderRepo);
         TestUtils.injectObjects(orderController, "userRepository", userRepo);
 
